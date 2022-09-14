@@ -1,0 +1,104 @@
+body {
+    background-color: #7A94D6;
+}
+
+/* Texts */ 
+
+.hello { 
+    position: absolute; 
+    left: 15%;
+    right: 15%;
+    top: 28%;
+    text-align: center;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+
+    color: #FFD8C2;
+}
+
+.myname { 
+    position: absolute; 
+    left: 10%;
+    right: 10%;
+    top: 39%;
+    text-align: center;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 35px;
+
+    color: #FFC2AF;
+}
+
+/*Nav*/
+
+.nav_wrapper {
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    top: 51%; 
+    text-align: center;
+    /* padding-top: 7%; */
+}
+
+.homenav1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 135%;
+
+    color: #DDFDFF;
+}
+
+.homenav2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 135%;
+
+    color: #DDFDFF;
+}
+
+.homenav3 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 135%;
+
+    color: #DDFDFF;
+}
+
+/* Images */
+
+.homegit {
+    position: absolute; 
+    left: 40%;
+    right: 10%;
+    top: 58%;
+    width: 4.5%;
+    height: auto; 
+}
+
+.homelink {
+    position: absolute; 
+    left: 48%;
+    right: 10%;
+    top: 58%;
+    width: 4.5%;
+    height: auto; 
+}
+
+.homeyou {
+    position: absolute; 
+    left: 56%;
+    right: 10%;
+    top: 58%;
+    width: 4.5%;
+    height: auto; 
+}

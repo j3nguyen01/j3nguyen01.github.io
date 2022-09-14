@@ -1,0 +1,66 @@
+.CardContainer {
+    background-color: #CDD9F8;
+    width: 30%;
+    min-height: 100%;
+    top: 0px;
+    position: absolute; 
+    align-items: center;
+}
+
+/* Items */ 
+
+.navname {
+    /* position: static; */
+    text-align: center;
+
+    font-family: 'Open Sans';
+    font-style: normal; 
+    font-size: 160%;
+    font-weight: 700;
+
+    color: #BD6060; 
+}
+
+.navme {
+    display: block; 
+    margin-left: auto; 
+    margin-top: 50%;
+    margin-right:auto; 
+    width: 50%;
+    height: auto;
+}
+
+.nav {
+    text-align: center;
+    margin-top: -4%;
+    margin-bottom: 6%;
+    margin-left: 4%; 
+    margin-right: 4%;
+
+    font-family: 'Open Sans';
+    font-style: normal; 
+    font-weight: 600;
+    font-size: 90%;
+
+    color: #D28F86; 
+}
+
+.navgit {
+    /* position: absolute;  */
+    margin-left: 30%;
+    width: 10%;
+    height: auto; 
+}
+.navlink {
+    /* position: absolute;  */
+    margin-left: 5%;
+    width: 10%;
+    height: auto; 
+}
+.navyou {
+    /* position: absolute;  */
+    margin-left: 5%;
+    width: 10%;
+    height: auto; 
+}
+

@@ -1,0 +1,25 @@
+.project {
+    background-color: #7A94D6;
+    width: 70%; 
+    left: 30%;
+    height: 100%;
+    top: 0px;
+    position: absolute; 
+    align-items: right;
+}
+
+
+.proj_title1 {
+    text-align: center; 
+    margin-top: 50%;
+    margin-left: 20%; 
+    margin-right: 20%;
+
+    font-family: 'Open Sans';
+    font-style: normal; 
+    font-weight: 700;
+    font-size: 170%;
+
+    color: #FFECEC;
+
+}
