@@ -5,32 +5,29 @@ body {
 /* Texts */ 
 
 .hello { 
-    position: absolute; 
-    left: 15%;
-    right: 15%;
-    top: 28%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 25%;
     text-align: center;
 
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 300%;
     line-height: 50px;
 
     color: #FFD8C2;
 }
 
 .myname { 
-    position: absolute; 
-    left: 10%;
-    right: 10%;
-    top: 39%;
+    margin-left: 20%;
+    margin-right: 20%;
     text-align: center;
 
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 27px;
+    font-size: 170%;
     line-height: 35px;
 
     color: #FFC2AF;
@@ -39,12 +36,10 @@ body {
 /*Nav*/
 
 .nav_wrapper {
-    position: absolute;
-    left: 15%;
-    right: 15%;
-    top: 51%; 
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 3%;
     text-align: center;
-    /* padding-top: 7%; */
 }
 
 .homenav1 {
@@ -77,28 +72,20 @@ body {
 /* Images */
 
 .homegit {
-    position: absolute; 
-    left: 40%;
-    right: 10%;
-    top: 58%;
+    margin-left: 41%;
+    margin-right: 3%;
     width: 4.5%;
     height: auto; 
 }
 
 .homelink {
-    position: absolute; 
-    left: 48%;
-    right: 10%;
-    top: 58%;
+    margin-right: 3%;
     width: 4.5%;
     height: auto; 
 }
 
 .homeyou {
-    position: absolute; 
-    left: 56%;
-    right: 10%;
-    top: 58%;
+    margin-right: 3%;
     width: 4.5%;
     height: auto; 
 }
