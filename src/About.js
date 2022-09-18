@@ -28,6 +28,10 @@ class About extends React.Component {
                         At the end of the day, I will constantly try my best to grow my potential in every field. 
                         In a few years, I hope to see myself tackling issues in an environment filled with people who are eager to learn and passionate about <b>creating something together</b> while pursuing personal projects that enrich my knowledge and skill set. 
                         </p>
+                        <p class = "text">
+                        If you ever want to chat, feel free to connect with me on <a class = "text" href="https://www.linkedin.com/in/khue-jen-nguyen-cal/"><b>LinkedIn</b></a> or email me at <a class = "text" href="mailto:jen.khue.nguyen2001@gmail.com"><b>jen.khue.nguyen2001@gmail.com</b></a>!
+                        </p>
+
                     </div>
                 </div>
             </div>

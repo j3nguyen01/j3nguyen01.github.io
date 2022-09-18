@@ -11,7 +11,7 @@
 
 .proj_title1 {
     text-align: center; 
-    margin-top: 50%;
+    margin-top: 10%;
     margin-left: 20%; 
     margin-right: 20%;
 
@@ -22,4 +22,120 @@
 
     color: #FFECEC;
 
+}
+
+.key {
+    text-align: center; 
+    margin-top: 10%;
+    margin-left: 20%; 
+    margin-right: 20%;
+
+    font-family: 'Open Sans';
+    font-style: normal; 
+    font-weight: 700;
+    font-size: 170%;
+
+    color: #FFECEC;
+    
+    text-decoration: underline;
+}
+
+.CS_projects {
+    height: 480px;
+    overflow-y: auto;
+
+    align-items: center;
+
+    scrollbar-width: thin;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+
+    margin: 10%;
+
+    background-color:#3B517D;
+}
+
+.rectangle-polaroid {
+    background: #FFFFFF;
+    border-radius: 32px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* overflow: hidden; */
+
+    margin: 10%;
+    
+    height: 10em;
+    width: 25em;
+}
+
+.files {
+    float: left;
+    width: 40%;
+}
+
+.matrix {
+    float: left;
+    display: block;
+    width: 40%;
+}
+
+.topic {
+    float: left;
+    width: 40%;
+}
+
+.text_container {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    margin-right: 35px;
+    object-fit: contain;
+}
+
+.vid1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    float: center;
+
+    margin: 5%;
+
+}
+
+.bigtext {
+    float: left;
+    overflow-wrap: break-word;
+
+    font-family: 'Open Sans';
+    font-style: normal; 
+    font-weight: 700;
+    font-size: 110%;
+
+    margin-top: 15px;
+    margin-left: 15px;
+
+    /* text-align: left; */
+    
+    color: #849dce;
+}
+
+.smalltext {
+    float: left;
+
+    font-family: 'Open Sans';
+    font-style: normal; 
+    font-weight: 300;
+    font-size: 90%;
+
+    margin-top: 5px;
+    margin-left: 15px;
+    
+    color: #849dce;
 }
