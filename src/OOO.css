@@ -1,0 +1,72 @@
+body {
+    background-color: #364652;
+}
+
+/* Texts */
+.greeting {
+    margin-left: 10%;
+    margin-right: 20%;
+    text-align: left;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 300%;
+    line-height: 50px;
+
+    color: #FFCF9C;
+}
+
+.ooo {
+    margin-left: 10%;
+    margin-right: 20%;
+    text-align: left;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24;
+
+
+    color: #FFCF9C;
+}
+
+.ooo-container {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.ooo-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.keyboard-image {
+    max-width: 50px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 10px; /* Space between the image and the text */
+}
+
+.electronic-music {
+    max-width: 50px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 10px; /* Space between the image and the text */
+}
+
+.link {
+    color: #D5DFE5;
+    text-decoration: none;
+}
+
+.icons {
+    display: flex;
+    gap: 20px; /* Add space between the icons */
+    margin-top: 20px;
+    margin-left: 0; /* Shift the icons to the left */
+}
+
+.icons img {
+    width: 40px; /* Adjust the size of the icons as needed */
+    height: 40px;
+}

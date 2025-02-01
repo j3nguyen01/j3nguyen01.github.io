@@ -1,0 +1,28 @@
+.header {
+    background-color: #364652;
+    padding: 20px;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.header-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header-nav-item {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+
+    color: #D5DFE5;
+
+    cursor: pointer;
+}
