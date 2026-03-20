@@ -1,0 +1,31 @@
+/* Global CSS Variables for Colors */
+:root {
+  /* Backgrounds */
+  --bg-1: #071a2b;
+  --bg-2: #0f3a56;
+  --header-bg: #222b4a;
+  --homepage-bg: #27304e;
+  --app-header-bg: #29324e;
+
+  /* Accents */
+  --accent: #f54c05;
+  --accent-2: #d90507;
+  --accent-cool: #f48b33;
+
+  /* Text Colors */
+  --text-primary: #FFCF9C;
+  --text-secondary: #e08e74;
+  --text-accent: #BD6060;
+  --text-muted: #ecdad2;
+  --nav-text: #DDFDFF;
+  --muted: #f0f7fb;
+
+  /* Links */
+  --app-link: #61dafb;
+
+  /* Waveform colors */
+  --wave-color: #ff7a4a;
+  --wave-cursor-color: #ff0000;
+  --wave-progress-color: #ecdad2;
+  --wave-marker-playing: #71d6ff;
+}

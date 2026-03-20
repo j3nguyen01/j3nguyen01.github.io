@@ -1,5 +1,5 @@
 body {
-    background-color: #364652;
+    background-color: var(--header-bg);
 }
 
 /* Texts */
@@ -14,7 +14,7 @@ body {
     font-size: 300%;
     line-height: 50px;
 
-    color: #FFCF9C;
+    color: var(--text-primary);
 }
 
 .ooo {
@@ -28,7 +28,7 @@ body {
     font-size: 24;
 
 
-    color: #FFCF9C;
+    color: var(--text-primary);
 }
 
 .ooo-container {
@@ -55,7 +55,7 @@ body {
 }
 
 .link {
-    color: #D5DFE5;
+    color: var(--text-muted);
     text-decoration: none;
 }
 
@@ -69,4 +69,23 @@ body {
 .icons img {
     width: 40px; /* Adjust the size of the icons as needed */
     height: 40px;
+    object-fit: contain;
+}
+
+.social-link {
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    display: inline-block;
+}
+
+.keyboard-link {
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+}
+
+.socials-link {
+    background: linear-gradient(90deg, var(--accent-cool), var(--accent));
 }

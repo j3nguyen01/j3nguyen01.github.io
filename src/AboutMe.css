@@ -1,12 +1,11 @@
 body {
-    background-color: #364652;
+    background-color: var(--header-bg);
 }
 
 /* Texts */
 .greeting {
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 20%;
     margin-bottom: 10px;
     text-align: left;
 
@@ -16,7 +15,7 @@ body {
     font-size: 300%;
     line-height: 50px;
 
-    color: #FFCF9C;
+    color: var(--text-primary);
 }
 
 .experiences {
@@ -31,7 +30,7 @@ body {
     font-size: 300%;
     line-height: 50px;
 
-    color: #FFCF9C;
+    color: var(--text-primary);
 }
 
 .aboutme {
@@ -42,57 +41,75 @@ body {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: normal;
-    font-size: 24;
-    /* line-height: 50px; */
+    font-size: 18px;
 
-    color: #FFCF9C;
+    color: var(--text-primary);
 }
 
 .aboutme-content {
+    flex: 1 1 50%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    max-width: 800px; /* Adjust the max-width as needed */
-    margin-bottom: 20px;
 }
 
 .aboutme-container {
     display: flex;
-    align-items: flex-start;
-    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 20px 10% 20px 7%;
+    box-sizing: border-box;
 }
 
 .aboutme-text {
     text-align: left;
-    /* flex: 1; */
-    padding-right: 20px;
+    margin-bottom: 20px;
 }
 
 .aboutme-image {
-    display: flex; 
-    justify-content: center; 
-    margin-top: 20%;
+    flex: 0 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 0;
 }
 
 .aboutme-image img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 450px;
     height: auto;
-    margin-top: 20%;
     border-radius: 250px;
+    object-fit: cover;
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .aboutme-container {
-        flex-direction: column; /* Stack content vertically */
-        align-items: center; /* Center align items */
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10% 20px 7%;
+        gap: 30px;
     }
 
     .aboutme-content {
-        padding-right: 0; /* Remove right padding */
+        flex: 1 1 100%;
+        width: 100%;
     }
 
     .aboutme-image {
-        margin-top: 20px; /* Add margin to the top */
+        flex: 0 1 100%;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .aboutme-image img {
+        max-width: 350px;
+    }
+
+    .greeting,
+    .experiences,
+    .aboutme {
+        margin-left: 0;
+        margin-right: 0;
     }
 }

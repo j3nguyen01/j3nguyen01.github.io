@@ -1,5 +1,7 @@
 .header {
-    background-color: #364652;
+    background-color: var(--header-bg);
+    background-size: cover;
+    background-position: center;
     padding: 20px;
     display: flex;
 
@@ -22,7 +24,19 @@
     font-weight: 600;
     font-size: 18px;
 
-    color: #D5DFE5;
+    color: var(--text-muted);
 
     cursor: pointer;
+}
+
+.theme-toggle {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: var(--text-muted);
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    flex-shrink: 0;
 }

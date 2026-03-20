@@ -35,7 +35,7 @@ function Project({ title, languages, libraries, skills, version, details, foot, 
                 <div className="polaroid-back">
                     <h2 className='title'>{title}</h2>
                     <p className='projectDetails'>{details}</p>
-                    {link && <a href={link} className='projectDescription'>Check it out!</a>}
+                    {link && <a href={link} className='projectDetails'>Check it out!</a>}
                     <p className='title'>{foot}</p>
                 </div>
             </div>

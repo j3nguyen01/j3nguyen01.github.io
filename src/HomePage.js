@@ -1,16 +1,40 @@
-import React, {useState, useEffect} from "react";
-import {useNavigate} from 'react-router-dom';
+import React from "react";
 import "./HomePage.css";
 import Header from './Header';
 import Project from "./Project";
-// import {StyleSheet, Text, View, TouchableOpacity, Alert} from 'react-native';
 
 function HomePage() {
+    const soundcloudTracks = [
+        {
+            title: "The Flowers Were Purple",
+            artist: "MaiKhue",
+            artistUrl: "https://soundcloud.com/maikhue-717374031",
+            trackUrl: "https://soundcloud.com/maikhue-717374031/the-flowers-were-purple/s-FBQSJ4Am3d7",
+            embedUrl: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%3Atracks%3A2287297565%3Fsecret_token%3Ds-FBQSJ4Am3d7&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        },
+        {
+            title: "Wishing Tree",
+            artist: "MaiKhue",
+            artistUrl: "https://soundcloud.com/maikhue-717374031",
+            trackUrl: "https://soundcloud.com/maikhue-717374031/wishing-tree/s-1MimcUE0Wo8",
+            embedUrl: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%3Atracks%3A2287297250%3Fsecret_token%3Ds-1MimcUE0Wo8&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        },
+        {
+            title: "Time2Go",
+            artist: "MaiKhue",
+            artistUrl: "https://soundcloud.com/maikhue-717374031",
+            trackUrl: "https://soundcloud.com/maikhue-717374031/time2go/s-ng26wwX4CcX",
+            embedUrl: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%3Atracks%3A2287296899%3Fsecret_token%3Ds-ng26wwX4CcX&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        },
+        {
+            title: "Coincidences",
+            artist: "MaiKhue",
+            artistUrl: "https://soundcloud.com/maikhue-717374031",
+            trackUrl: "https://soundcloud.com/maikhue-717374031/realcoincidenceideas/s-kjrmA8hAwmi",
+            embedUrl: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%3Atracks%3A2287296692%3Fsecret_token%3Ds-kjrmA8hAwmi&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        }
+    ];
 
-    const navigate = useNavigate();
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [projectsPerView, setProjectsPerView] = useState(1);
-    // const [opacity, setOpacity] = useState(1);
     const projects = [
         {
             title: "fireSimulator {",
@@ -42,50 +66,41 @@ function HomePage() {
         }
     ];
 
-    useEffect(() => {
-        const handleResize = () => {
-            if (window.innerWidth >= 900) {
-                setProjectsPerView(3);
-            } else if (window.innerWidth >= 600) {
-                setProjectsPerView(2);
-            } else {
-                setProjectsPerView(1);
-            }
-        };
-        // const handleScroll = () => {
-        //     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        //     const maxScroll = 100; // Adjust this value as needed
-        //     const newOpacity = Math.max(1 - scrollTop / maxScroll, 0);
-        //     setOpacity(newOpacity);
-        // };
-
-        window.addEventListener('resize', handleResize);
-        // window.addEventListener('scroll', handleScroll);
-        handleResize(); // Initial call to set the correct number of projects per view
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-            // window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
-    const handlePrev = () => {
-        setCurrentIndex((prevIndex) => (prevIndex === 0 ? projects.length - 1 : prevIndex - 1));
-    };
-
-    const handleNext = () => {
-        setCurrentIndex((prevIndex) => (prevIndex === projects.length - 1 ? 0 : prevIndex + 1));
-    };
-
     return(
-        <div> 
+        <div > 
             <Header />
-            {/* <h1 class = "hello" style={{ opacity }}> Hello World! </h1> */}
-            <h1 class = "hello"> Hello World! </h1>
-            <h3 class = "myname"> My name is Mai Khue Nguyen and here are some cool projects I've done!</h3>
+            <h1 className="hello"> Hello World! </h1>
+            <h3 className="myname"> I love music and I hope you do too! Listen below to preview some of my very own tracks :D</h3>
+            <section className="soundcloud-section">
+                <div className="soundcloud-embed-list">
+                    {soundcloudTracks.map((track) => (
+                        <div className="soundcloud-embed-wrapper" key={track.title}>
+                            <iframe
+                                title={`${track.title} SoundCloud embed`}
+                                className="soundcloud-embed"
+                                width="100%"
+                                height="166"
+                                scrolling="no"
+                                frameBorder="no"
+                                allow="autoplay"
+                                src={track.embedUrl}
+                            />
+                            <div className="soundcloud-credit">
+                                <a href={track.artistUrl} target="_blank" rel="noreferrer">
+                                    {track.artist}
+                                </a>
+                                <span> · </span>
+                                <a href={track.trackUrl} target="_blank" rel="noreferrer">
+                                    {track.title}
+                                </a>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </section>
+            <h3 className="myname"> I'm also a Software Engineer and here are some cool projects I've done!</h3>
             <div className="proj-container-wrapper">
-                {/* <button className="arrow arrow-left" onClick={handlePrev}>&lt;</button> */}
-                <div className="proj-container" style={{ transform: `translateX(-${currentIndex * (100 / projectsPerView)}%)` }}>
+                <div className="proj-container">
                     {projects.map((project, index) => (
                         <div className="proj" key={index}>
                             <Project 

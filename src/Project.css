@@ -3,37 +3,36 @@
     font-size: 24px;
     font-weight: 600;
     font-family: 'Open Sans';
-    color: #D28F86;
+    color: var(--accent);
     text-align: left;
 }
 .projectDescription {
     font-size: 24px;
     font-weight: 600;
     font-family: 'Open Sans';
-    color: #BD6060;
+    color: var(--accent-cool);
     text-align: left;
     padding-left: 20px;
     margin: 2px 0;
 }
 
 .projectDetails {
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
     font-family: 'Open Sans';
-    color: #BD6060;
-    opacity: 0.75;
+    color: var(--accent-cool);
     text-align: left;
     padding-left: 20px;
     margin: 2px 0;
 }
 
 .projectDescriptionTitle {
-    color: #BD6060;
+    color: var(--accent-cool);
     display: inline; /* Ensure it stays inline with the rest of the text */
 }
 
 .projectDescriptionValue {
-    color: #BD6060;
+    color: var(--accent-cool);
     opacity: 0.75; /* Reduced opacity for the value part */
     display: inline; /* Ensure it stays inline with the rest of the text */
 }
@@ -57,27 +56,26 @@
 }
 
 .polaroid-front:hover {
-    border: 5px solid #D28F86; /* Hover border */
+    border: 5px solid var(--accent); /* Hover border */
     border-radius: 20px; 
 }
 
 .polaroid-front:active {
-    border: 5px solid #D28F86; /* Active border */
+    border: 5px solid var(--accent); /* Active border */
     border-radius: 20px; 
 }
 
 .polaroid-back:hover {
-    border: 5px solid #D28F86; /* Hover border */
+    border: 5px solid var(--accent); /* Hover border */
     border-radius: 20px; 
 }
 
 .polaroid-back:active {
-    border: 5px solid #D28F86; /* Active border */
+    border: 5px solid var(--accent); /* Active border */
     border-radius: 20px; 
 }
 
 .polaroid-front, .polaroid-back {
-    width: 100%;
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
@@ -87,7 +85,7 @@
     align-items: flex-start; 
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: #D5DFE5;
+    background-color: var(--text-muted);
     border: 5px solid transparent;
     border-radius: 20px; 
 }
@@ -107,13 +105,3 @@
 .flipped .polaroid-back {
     transform: rotateY(0deg);
 }
-
-/* .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-} */
